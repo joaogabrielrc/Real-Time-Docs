@@ -1,0 +1,26 @@
+{
+  "name": "real-time-docs",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "scripts": {
+    "dev": "ts-node-dev src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaogabrielrc/Real-Time-Docs.git"
+  },
+  "author": "@joaogabrielrc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaogabrielrc/Real-Time-Docs/issues"
+  },
+  "homepage": "https://github.com/joaogabrielrc/Real-Time-Docs#readme",
+  "dependencies": {
+    "express": "4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.16",
+    "ts-node-dev": "2.0.0",
+    "typescript": "4.9.4"
+  }
+}
