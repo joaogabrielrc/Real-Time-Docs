@@ -14,6 +14,6 @@ textEditorElement.addEventListener('keyup', () => {
   emitTextEditor({ text, documentName });
 });
 
-export const changeTextEditorClients = text => {
+export const changeTextEditor = text => {
   textEditorElement.value = text;
 };

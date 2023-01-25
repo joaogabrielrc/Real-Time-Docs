@@ -15,5 +15,3 @@ const hostname = process.env.HOSTNAME ?? '127.0.0.1';
 httpServer.listen(Number(port), hostname, () =>
   console.log(`Server is listening on http://${hostname}:${port}...`)
 );
-
-
