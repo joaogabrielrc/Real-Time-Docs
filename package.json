@@ -1,9 +1,9 @@
 {
   "name": "real-time-docs",
   "version": "1.0.0",
-  "main": "main.ts",
+  "main": "socket-back.ts",
   "scripts": {
-    "dev": "ts-node-dev src/main.ts"
+    "dev": "ts-node-dev src/socket-back.ts"
   },
   "repository": {
     "type": "git",
