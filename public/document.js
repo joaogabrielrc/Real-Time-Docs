@@ -1,9 +1,17 @@
-import { emitTextEditor } from './socket-front-document.js';
+import { emitTextEditor, selectDocument } from './socket-front-document.js';
 
+const params = new URLSearchParams(window.location.search);
+const documentName = params.get('name');
+
+const documentTitleElement = document.querySelector('#document-title');
 const textEditorElement = document.querySelector('#text-editor');
 
+documentTitleElement.textContent = documentName;
+selectDocument(documentName);
+
 textEditorElement.addEventListener('keyup', () => {
-  emitTextEditor(textEditorElement.value);
+  const text = textEditorElement.value;
+  emitTextEditor({ text, documentName });
 });
 
 export const changeTextEditorClients = text => {
